@@ -12,8 +12,6 @@ public class Timer : MonoBehaviour
     }
     void Update()
     {
-        timerText.text =
-        System.Math.Round((decimal)Time.timeSinceLevelLoad,
-        2).ToString();
+        timerText.text = System.Math.Round((decimal)Time.timeSinceLevelLoad, 2).ToString();
     }
 }

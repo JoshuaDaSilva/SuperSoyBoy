@@ -20,12 +20,6 @@ public class Hazard : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnCollisionEnter2D(Collision2D coll)
     {
         // 1
@@ -45,5 +39,11 @@ public class Hazard : MonoBehaviour
             Destroy(coll.gameObject);
             GameManager.instance.RestartLevel(1.25f);
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

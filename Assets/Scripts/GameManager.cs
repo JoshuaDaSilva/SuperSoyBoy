@@ -26,12 +26,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void RestartLevel(float delay)
     {
         StartCoroutine(RestartLevelDelay(delay));
@@ -40,5 +34,11 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("Game");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
