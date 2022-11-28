@@ -13,7 +13,7 @@ public class Hazard : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +43,7 @@ public class Hazard : MonoBehaviour
             spriteRenderer.sprite = hitSprite;
             // 4
             Destroy(coll.gameObject);
+            GameManager.instance.RestartLevel(1.25f);
         }
     }
 }
